@@ -6,6 +6,7 @@
   "scripts": {
     "log:usb": "PORT=/dev/tty.wchusbserial14620 && espruino --board ESP8266_BOARD -p $PORT -b 115200 -n",
     "upload:usb": "PORT=/dev/tty.wchusbserial14620 && espruino --board ESP8266_BOARD -p $PORT -b 115200 index.js",
+    "shell:usb": "PORT=/dev/tty.wchusbserial14620 && espruino --board ESP8266_BOARD -p $PORT -b 115200",
     "upload:remote": "PORT=tcp://doorcontroller && espruino --board ESP8266_BOARD -p $PORT -b 115200 index.js -e 'save()' && npm run shell:remote",
     "shell:remote": "PORT=tcp://doorcontroller && espruino --board ESP8266_BOARD -p $PORT -b 115200",
     "ide:remote": "PORT=tcp://doorcontroller && espruino --board ESP8266_BOARD -p $PORT -b 115200 --ide",
