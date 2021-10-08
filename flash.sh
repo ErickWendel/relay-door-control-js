@@ -1,7 +1,5 @@
 # sh flash.sh
 
-# https://www.espruino.com/binaries/espruino_2v09_esp8266_4mb/
-
 # pip3 show esptool
 # chmod +x /usr/local/lib/python3.9/site-packages/esptool.py
 
